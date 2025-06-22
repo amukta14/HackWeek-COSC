@@ -9,7 +9,7 @@ def scrape_github_trending():
     url = "https://github.com/trending"
     try:
         response = requests.get(url)
-        response.raise_for_status()  # Raise an exception for bad status codes
+        response.raise_for_status()  
     except requests.exceptions.RequestException as e:
         print(f"Error fetching the URL: {e}")
         return []
