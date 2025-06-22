@@ -9,15 +9,11 @@ def fahrenheit_to_celsius(fahrenheit):
     return (fahrenheit - 32) * 5/9
 
 def main():
-    """
-    Main function to parse arguments and perform temperature conversion.
-    """
     parser = argparse.ArgumentParser(
         description="A simple CLI tool to convert temperatures.",
         epilog="Example usage: python converter.py --celsius 25"
     )
 
-    # Use a mutually exclusive group to ensure only one temp type is provided
     group = parser.add_mutually_exclusive_group(required=True)
     group.add_argument(
         "-c", "--celsius", 
