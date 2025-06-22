@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deepgram Speech-to-Text</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Live Speech-to-Text</h1>
+        <p>Click the button and start speaking. Your words will appear below.</p>
+        <button id="recordButton">Start Listening</button>
+        <div class="output-container">
+            <h2>Transcript:</h2>
+            <textarea id="transcript" rows="10" readonly></textarea>
+        </div>
+        <div class="status" id="status">Ready</div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html> 

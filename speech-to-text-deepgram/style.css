@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(180deg, #3498db, #0072ff);
+    color: #0d3b66;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+/* Animated Wave Background */
+body::before, body::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 150px;
+    background-size: 1000px 150px;
+    background-repeat: repeat-x;
+    z-index: 0;
+}
+
+/* Back wave: Slower, more transparent */
+body::before {
+    background-image: url('data:image/svg+xml;utf8,<svg viewBox="0 0 1000 150" xmlns="http://www.w3.org/2000/svg"><path d="M0,100 C250,150 350,50 500,100 C650,150 750,50 1000,100 L1000,150 L0,150 Z" fill="rgba(255,255,255,0.3)"></path></svg>');
+    animation: wave-flow 25s linear infinite;
+}
+
+/* Front wave: Faster, more opaque */
+body::after {
+    background-image: url('data:image/svg+xml;utf8,<svg viewBox="0 0 1000 150" xmlns="http://www.w3.org/2000/svg"><path d="M0,100 C150,50 350,150 500,100 C650,50 850,150 1000,100 L1000,150 L0,150 Z" fill="rgba(255,255,255,0.5)"></path></svg>');
+    animation: wave-flow 15s linear infinite;
+}
+
+@keyframes wave-flow {
+    from { background-position-x: 0; }
+    to { background-position-x: -1000px; }
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 2rem 3rem;
+    border-radius: 25px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 600px;
+    position: relative;
+    z-index: 1;
+    animation: float-effect 6s ease-in-out infinite;
+}
+
+@keyframes float-effect {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-15px); }
+    100% { transform: translateY(0px); }
+}
+
+h1 {
+    color: #0d3b66;
+    margin-bottom: 0.5rem;
+    font-weight: 700;
+}
+
+p {
+    margin-bottom: 2rem;
+    color: #555;
+}
+
+#recordButton {
+    background-color: #ff6b6b; /* Coral Pink */
+    color: white;
+    border: none;
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(255, 107, 107, 0.4);
+    margin-bottom: 2rem;
+}
+
+#recordButton:hover {
+    background-color: #f06060;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(255, 107, 107, 0.5);
+}
+
+#recordButton.recording {
+    background-color: #ffb4a2; /* Lighter Coral */
+    animation: bubble-pulse 1.5s infinite;
+}
+
+@keyframes bubble-pulse {
+    0% { transform: scale(1); box-shadow: 0 4px 15px rgba(255, 180, 162, 0.4); }
+    50% { transform: scale(1.05); box-shadow: 0 6px 25px rgba(255, 180, 162, 0.6); }
+    100% { transform: scale(1); box-shadow: 0 4px 15px rgba(255, 180, 162, 0.4); }
+}
+
+.output-container {
+    text-align: left;
+}
+
+h2 {
+    color: #0d3b66;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 0.5rem;
+}
+
+#transcript {
+    width: 100%;
+    background-color: #e0f7fa; /* Light Cyan - like shallow water */
+    border: 2px solid #b2ebf2;
+    border-radius: 15px;
+    color: #0d3b66;
+    padding: 1rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    box-sizing: border-box;
+    resize: vertical;
+}
+
+.status {
+    margin-top: 1.5rem;
+    font-size: 0.9rem;
+    color: #0d3b66;
+    min-height: 1.2em;
+    font-weight: bold;
+} 
