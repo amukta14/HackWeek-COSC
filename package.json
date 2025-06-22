@@ -1,0 +1,16 @@
+{
+  "name": "hackweek-cosc",
+  "version": "1.0.0",
+  "description": "HackWeek COSC projects collection",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"No tests specified\" && exit 0"
+  },
+  "keywords": [
+    "hackweek",
+    "cosc",
+    "projects"
+  ],
+  "author": "amukta14",
+  "license": "MIT"
+} 
