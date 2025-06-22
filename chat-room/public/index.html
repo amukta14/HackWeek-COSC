@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Real-time chat room with modern UI">
+    <meta name="theme-color" content="#667eea">
+    <title>Modern Chat Room</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="/socket.io/socket.io.js"></script>
+</head>
+<body>
+    <div class="container">
+        <!-- Login Screen -->
+        <div id="loginScreen" class="login-screen">
+            <div class="login-box">
+                <h1>Chat Room</h1>
+                <p>Join the conversation with real-time messaging</p>
+                <input type="text" id="usernameInput" placeholder="Enter your username" maxlength="20" autocomplete="off">
+                <button id="joinBtn">Join Chat</button>
+            </div>
+        </div>
+
+        <!-- Chat Screen -->
+        <div id="chatScreen" class="chat-screen hidden">
+            <div class="chat-header">
+                <h2>💬 Chat Room</h2>
+                <div class="user-info">
+                    <span id="currentUser"></span>
+                    <button id="leaveBtn">Leave</button>
+                </div>
+            </div>
+
+            <div class="chat-container">
+                <div class="sidebar">
+                    <h3>Online Users</h3>
+                    <ul id="userList"></ul>
+                </div>
+
+                <div class="main-chat">
+                    <div class="messages" id="messages">
+                        <!-- Messages will be added here dynamically -->
+                    </div>
+                    
+                    <div class="typing-indicator" id="typingIndicator"></div>
+                    
+                    <div class="message-input">
+                        <input type="text" id="messageInput" placeholder="Type your message..." maxlength="500" autocomplete="off">
+                        <button id="sendBtn">Send</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html> 
