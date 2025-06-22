@@ -15,3 +15,6 @@ This Python script scrapes the top 5 trending repositories from [GitHub's Trendi
     ```
 
 This will generate a `trending_repos.csv` file in the same directory. 
+
+Here is my output:
+<img width="744" alt="output" src="https://github.com/user-attachments/assets/afc87ee0-e142-4727-828f-ff2cb96f41e9" />
