@@ -1,0 +1,25 @@
+{
+  "name": "github-actions-pipeline",
+  "version": "1.0.0",
+  "description": "A GitHub Actions workflow demonstration project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"No tests specified\" && exit 0",
+    "start": "node index.js",
+    "build": "echo \"Build completed\""
+  },
+  "keywords": [
+    "github-actions",
+    "ci-cd",
+    "nodejs",
+    "workflow"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+} 
