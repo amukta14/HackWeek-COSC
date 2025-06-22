@@ -14,3 +14,6 @@ The active workflow is defined in the root `.github/workflows/main.yml` file. It
 
 ## How to Run
 Push changes to the `main` branch or trigger the workflow manually from the **Actions** tab in your GitHub repository. The workflow located in the root `.github` directory is the one that will execute. 
+
+<img width="1688" alt="Screenshot 2025-06-22 at 9 06 30 PM" src="https://github.com/user-attachments/assets/35b97ae1-2271-4857-95f4-cec41ddc0cd6" />
+<img width="1665" alt="Screenshot 2025-06-22 at 9 06 16 PM" src="https://github.com/user-attachments/assets/1e958903-a5ef-4426-81cc-e6027f98c11c" />
