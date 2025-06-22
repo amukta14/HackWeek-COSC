@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // IMPORTANT: Double-check that this key is correct and has not expired.
     // Deepgram keys typically look like this: XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX
-    const DEEPGRAM_API_KEY = 'af4120e0eca59ee55b481eb28146834b5fb668b4';
+    const DEEPGRAM_API_KEY = 'enter your api here';
 
     const connectToDeepgram = () => {
         statusDiv.textContent = 'Connecting...';
