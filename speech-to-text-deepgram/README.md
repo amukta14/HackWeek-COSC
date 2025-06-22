@@ -1,3 +1,5 @@
+
+<img width="1646" alt="amukta-deepgram" src="https://github.com/user-attachments/assets/4c2d7d9d-8f81-4aa2-a338-9e54ad692f5e" />
 # Speech-to-Text with Deepgram
 
 This project uses the Deepgram API to provide live speech-to-text transcription directly in the browser.
