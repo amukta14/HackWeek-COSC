@@ -4,7 +4,7 @@ Real-time chat app built with Node.js, Express, and Socket.IO.
 
 ## Live Demo
 
-**[Try it live on Render](https://chatroom-dewd.onrender.com)**
+https://chatroom-dewd.onrender.com
 
 ## Quick Start
 
